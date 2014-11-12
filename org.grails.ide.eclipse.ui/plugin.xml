@@ -345,14 +345,7 @@
 	</extension>
 
 	<extension point="org.eclipse.ui.bindings">
-		<key sequence="CTRL+SHIFT+ALT+G"
-			commandId="org.grails.ide.eclipse.ui.command.openGrailsCommandPrompt"
-			contextId="org.eclipse.ui.contexts.window"
-			schemeId="org.eclipse.ui.defaultAcceleratorConfiguration" />
-		<key platform="carbon" sequence="CTRL+SHIFT+ALT+G" commandId=""
-			contextId="org.eclipse.ui.contexts.window"
-			schemeId="org.eclipse.ui.defaultAcceleratorConfiguration" />
-		<key platform="carbon" sequence="COMMAND+SHIFT+ALT+G"
+		<key sequence="M1+M2+M3+G"
 			commandId="org.grails.ide.eclipse.ui.command.openGrailsCommandPrompt"
 			contextId="org.eclipse.ui.contexts.window"
 			schemeId="org.eclipse.ui.defaultAcceleratorConfiguration" />
@@ -362,18 +355,7 @@
         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
         sequence="M3+G M"/>
     <!-- Now disable all of the M3+G commands for Swiss German since that conflicts with '@' -->      
-    <key
-        locale="de_CH"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M3+G M"/>
     <!-- Reenable commands using M1+M3+G for Swiss German -->      
-    <key
-        locale="de_CH"
-        commandId="org.grails.ide.eclipse.ui.command.openPluginManager"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M1+M3+G M"/>
 
 	
 	<key
@@ -382,18 +364,7 @@
         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
         sequence="M3+G W"/>
     <!-- Now disable all of the M3+G commands for Swiss German since that conflicts with '@' -->      
-    <key
-        locale="de_CH"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M3+G W"/>
     <!-- Reenable commands using M1+M3+G for Swiss German -->      
-    <key
-        locale="de_CH"
-        commandId="org.grails.ide.eclipse.ui.command.grailsCommandWizard"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M1+M3+G W"/>
 
 	
 	<key
@@ -402,18 +373,7 @@
         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
         sequence="M3+G M3+D"/>
     <!-- Now disable all of the M3+G commands for Swiss German since that conflicts with '@' -->      
-    <key
-        locale="de_CH"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M3+G M3+D"/>
     <!-- Reenable commands using M1+M3+G for Swiss German -->      
-    <key
-        locale="de_CH"
-        commandId="org.grails.ide.eclipse.ui.command.createDomainClass"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M1+M3+G M3+D"/>
 
 	
 	
@@ -423,18 +383,7 @@
         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
         sequence="M3+G M3+C"/>
     <!-- Now disable all of the M3+G commands for Swiss German since that conflicts with '@' -->      
-    <key
-        locale="de_CH"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M3+G M3+C"/>
     <!-- Reenable commands using M1+M3+G for Swiss German -->      
-    <key
-        locale="de_CH"
-        commandId="org.grails.ide.eclipse.ui.command.createController"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M1+M3+G M3+C"/>
 
 	
 	
@@ -444,18 +393,7 @@
         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
         sequence="M3+G M3+T"/>
     <!-- Now disable all of the M3+G commands for Swiss German since that conflicts with '@' -->      
-    <key
-        locale="de_CH"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M3+G M3+T"/>
     <!-- Reenable commands using M1+M3+G for Swiss German -->      
-    <key
-        locale="de_CH"
-        commandId="org.grails.ide.eclipse.ui.command.createTaglib"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M1+M3+G M3+T"/>
 
 	
 	
@@ -465,18 +403,7 @@
         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
         sequence="M3+G M3+S"/>
     <!-- Now disable all of the M3+G commands for Swiss German since that conflicts with '@' -->      
-    <key
-        locale="de_CH"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M3+G M3+S"/>
     <!-- Reenable commands using M1+M3+G for Swiss German -->      
-    <key
-        locale="de_CH"
-        commandId="org.grails.ide.eclipse.ui.command.createService"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M1+M3+G M3+S"/>
 
 	<key
         commandId="org.grails.ide.eclipse.ui.command.createFilters"
@@ -484,18 +411,7 @@
         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
         sequence="M3+G M3+I"/>
     <!-- Now disable all of the M3+G commands for Swiss German since that conflicts with '@' -->      
-    <key
-        locale="de_CH"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M3+G M3+I"/>
     <!-- Reenable commands using M1+M3+G for Swiss German -->      
-    <key
-        locale="de_CH"
-        commandId="org.grails.ide.eclipse.ui.command.createFilters"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M1+M3+G M3+I"/>
         
         
 	<key
@@ -504,18 +420,12 @@
         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
         sequence="M3+G R"/>
     <!-- Now disable all of the M3+G commands for Swiss German since that conflicts with '@' -->      
-    <key
-        locale="de_CH"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M3+G R"/>
     <!-- Reenable commands using M1+M3+G for Swiss German -->      
-    <key
-        locale="de_CH"
-        commandId="org.grails.ide.eclipse.ui.command.refreshClasspath"
-        contextId="org.eclipse.ui.contexts.window"
-        schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-        sequence="M1+M3+G R"/>
+    <sequenceModifier
+          find="M3+G"
+          platforms="carbon,cocoa"
+          replace="M3+M4+G">
+    </sequenceModifier>
 	</extension>
 	
 	

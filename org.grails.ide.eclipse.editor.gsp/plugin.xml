@@ -215,19 +215,13 @@
             contextId="org.codehaus.groovy.eclipse.editor.groovyEditorScope"
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
             sequence="M3+G G"/>
+      <sequenceModifier
+            find="M3+G"
+            platforms="cocoa,carbon"
+            replace="M3+M4+G">
+      </sequenceModifier>
       <!-- Now disable all of the M3+G commands for Swiss German since that conflicts with '@' -->      
-      <key
-            contextId="org.codehaus.groovy.eclipse.editor.groovyEditorScope"
-            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-            locale="de_CH"
-            sequence="M3+G G"/>
       <!-- Reenable commands using M1+M3+G for Swiss German -->      
-      <key
-            locale="de_CH"
-            commandId="org.grails.ide.eclipse.editor.gsp.gspCommand"
-            contextId="org.codehaus.groovy.eclipse.editor.groovyEditorScope"
-            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-            sequence="M1+M3+G G"/>
     </extension>
    <extension
          point="org.eclipse.ui.editorActions">

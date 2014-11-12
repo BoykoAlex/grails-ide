@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2012 VMWare, Inc.
+ * Copyright (c) 2012, 2014 VMWare, Inc.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -18,13 +18,11 @@ import junit.framework.Test;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.Path;
-import org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader;
 import org.grails.ide.eclipse.core.internal.classpath.GrailsPluginVersion;
 import org.grails.ide.eclipse.core.internal.classpath.PluginDescriptorParser;
 import org.grails.ide.eclipse.core.internal.plugins.GrailsCore;
 import org.grails.ide.eclipse.core.internal.plugins.PerProjectPluginCache;
 import org.grails.ide.eclipse.core.model.GrailsVersion;
-
 import org.grails.ide.eclipse.test.GrailsTestsActivator;
 
 /**
@@ -36,14 +34,10 @@ public class PluginInferencingTests extends AbstractGrailsInferencingTests {
     
     static {
         ClassLoader l = PluginInferencingTests.class.getClassLoader();
-        if (l instanceof DefaultClassLoader) {
-            DefaultClassLoader dcl = (DefaultClassLoader) l;
-            System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            System.out.println("" + PluginInferencingTests.class + " getting loaded by: " + dcl.getBundle());
-        } else {
-            System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            System.out.println("" + PluginInferencingTests.class + " getting loaded by: " + l);
-        }
+		System.out
+				.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		System.out.println("" + PluginInferencingTests.class
+				+ " getting loaded by: " + l);
     }
     
     public static Test suite() {
